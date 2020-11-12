@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/flickity-docs/css/flickity-docs.css" media="screen">
+    <link
+      rel="stylesheet"
+      media="all and (max-width: 1024px)"
+      href="assets/css/main_medium.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all and (max-width: 768px)"
+      href="assets/css/main_small.css"
+    />    
     <script src="assets/flickity-docs/js/flickity-docs.min.js"></script>
     <script src="assets/js/main.js" defer></script>
 </head>
@@ -20,16 +30,22 @@
                     <div class="logo">
                         <a href="#">Snow</a>
                     </div>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
+                    <ul class="toggle">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </header>
-        <section class="section section-visual">
+        <div class="toggle-btn">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>        
+        <section id="home" class="section section-visual">
             <div class="inner">
                 <div class="visual-con">
                     <h2 class="subtitle">New Branding Agency</h2>
@@ -38,10 +54,9 @@
                     </h1>
                 </div>   
             </div>
-            
         </section>
-        <a class="scroll-down" href="#"><span></span></a>
-        <section class="section section-feature">
+        <button class="scroll-down"><span></span></button>
+        <section id="about" class="section section-feature">
             <div class="summary">
                 <h2 class="summary_title">About Our Agency</h2>
                 <p class="summary_description">We are a new design studio based in USA. We have over 20 years of combined experience,<br /> and know a thing or two about designing websites and mobile apps.<br />Clever use of technology and lean processes enable us to work faster and smarter.
@@ -83,7 +98,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-projects">
+        <section id="projects" class="section section-projects">
             <div class="summary">
                 <h2 class="summary_title">Best Projects</h2>
                 <p class="summary_description">
@@ -185,7 +200,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-blog">
+        <section id="blog" class="section section-blog">
             <div class="summary">
                 <h2 class="summary_title">Latest Blog</h2>
                 <p class="summary_description">
@@ -235,7 +250,7 @@
               </div>                              
               </div>            
         </section>
-        <section class="section section-contact">
+        <section id="contact" class="section section-contact">
             <div class="inner">
                 <div class="contact_container">
                     <div class="contact-info">

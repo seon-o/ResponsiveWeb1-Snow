@@ -1,11 +1,23 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 .body_container {
     font-family: "Work Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
     font-weight: 400;
-    color: #333;
+    color: #171717;
 }
+
 /* btn */
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
 .btn {
     position: relative;
     height: 50px;
@@ -112,11 +124,17 @@
 
 /* Header */
 header.section {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color: transparent;
+}
+
+header.section.navbar-bg {
+    background-color: rgb(0 0 0 / 80%);
+    transition: all 200ms ease-in-out;
+    z-index: 10;
 }
 
 header .inner {
@@ -225,7 +243,7 @@ header ul li a {
 }
 
 
-a.scroll-down > span {
+.scroll-down > span {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -237,7 +255,7 @@ a.scroll-down > span {
     box-sizing: border-box;
 }
 
-a.scroll-down > span::after {
+.scroll-down > span::after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -259,14 +277,12 @@ a.scroll-down > span::after {
 }
 
 .summary {
-    width: 980px;
     margin: 0 auto;
     text-align: center;
 }
 
 .summary_title {
     font-family: Playfair Display,serif;
-    color: #171717;
     font-size: 2.6rem;
     font-weight: 700;
     margin: 0 0 25px 0;
