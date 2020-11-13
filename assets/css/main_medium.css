@@ -75,6 +75,11 @@ header .menu-group {
     width: 100%;
 }
 
+.project {
+    width: 250px;
+    height: 250px;
+}
+
 
 /* 토글 라인 */
 

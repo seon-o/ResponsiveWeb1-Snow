@@ -360,11 +360,11 @@ header ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     margin: 2px;
     background-color: #f9f9f9;
-    border-radius: var(--size-border-radius);
+    border-radius: 5px;
   }
 
 .project_img {
@@ -456,8 +456,11 @@ header ul li a {
   } 
 
  /* section-photo */
+ .section-photo {
+    padding: 60px 0 60px;
+ }
  .carousel-cell-photo {
-    margin: 20px 0;
+    margin: 0px 0;
  }
 
 .carousel-cell-photo img{
